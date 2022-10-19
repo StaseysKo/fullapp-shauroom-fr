@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: ["http://shauroom-test"],
+  origin: ["http://shauroom-test.ru"],
 }));
 const port = process.env.PORT || 5000;
 
@@ -26,5 +26,5 @@ app.post("/send", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`http://shauroom-test:${port}`);
+  console.log(`http://shauroom-test.ru:${port}`);
 });
